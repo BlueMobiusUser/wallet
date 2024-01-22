@@ -1,0 +1,22 @@
+QT_TS = \
+  qt/locale/bluemobius_ar.ts \
+  qt/locale/bluemobius_bg.ts \
+  qt/locale/bluemobius_de.ts \
+  qt/locale/bluemobius_en.ts \
+  qt/locale/bluemobius_es.ts \
+  qt/locale/bluemobius_fi.ts \
+  qt/locale/bluemobius_fr.ts \
+  qt/locale/bluemobius_it.ts \
+  qt/locale/bluemobius_ja.ts \
+  qt/locale/bluemobius_ko.ts \
+  qt/locale/bluemobius_nl.ts \
+  qt/locale/bluemobius_pl.ts \
+  qt/locale/bluemobius_pt.ts \
+  qt/locale/bluemobius_ro.ts \
+  qt/locale/bluemobius_ru.ts \
+  qt/locale/bluemobius_sk.ts \
+  qt/locale/bluemobius_th.ts \
+  qt/locale/bluemobius_tr.ts \
+  qt/locale/bluemobius_vi.ts \
+  qt/locale/bluemobius_zh_CN.ts \
+  qt/locale/bluemobius_zh_TW.ts

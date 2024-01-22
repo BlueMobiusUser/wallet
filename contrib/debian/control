@@ -1,0 +1,65 @@
+Source: bluemobius
+Section: utils
+Priority: optional
+Maintainer: Holger Schinzel <holger@bluemobius.org>
+Uploaders: Holger Schinzel <holger@bluemobius.org>
+Build-Depends: debhelper,
+ devscripts,
+ automake,
+ libtool,
+ bash-completion,
+ libdb4.8++-dev,
+ pkg-config,
+ libevent-dev,
+ libboost-filesystem1.48-dev | libboost-filesystem-dev (>> 1.47),
+ libboost-thread1.48-dev | libboost-thread-dev (>> 1.47),
+ libboost-test1.48-dev | libboost-test-dev (>> 1.47),
+ libminiupnpc8-dev | libminiupnpc-dev,
+ qt4-qmake, libqt4-dev,
+ qttools5-dev-tools, qttools5-dev,
+ libqrencode-dev,
+ python,
+ libzmq3-dev
+Standards-Version: 3.9.2
+Homepage: https://www.bluemobius.org/
+Vcs-Git: git://github.com/bluemobiuspay/bluemobius.git
+Vcs-Browser: https://github.com/BlueMobius/BlueMobius
+
+Package: bluemobiusd
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - daemon
+ BlueMobius is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. BlueMobius uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. BlueMobius Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides the daemon, bluemobiusd, and the CLI tool
+ bluemobius-cli to interact with the daemon.
+
+Package: bluemobius-qt
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer network based digital currency - Qt GUI
+ BlueMobius is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. BlueMobius uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. BlueMobius Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides BlueMobius-Qt, a GUI for BlueMobius based on Qt.
+
+Package: bluemobius-tx
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: peer-to-peer digital currency - standalone transaction tool
+ BlueMobius is an experimental new digital currency that enables instant, private
+ payments to anyone, anywhere in the world. BlueMobius uses peer-to-peer
+ technology to operate with no central authority: managing transactions
+ and issuing money are carried out collectively by the network. BlueMobius Core
+ is the name of the open source software which enables the use of this currency.
+ .
+ This package provides bluemobius-tx, a command-line transaction creation
+ tool which can be used without a bluemobius daemon.  Some means of
+ exchanging minimal transaction data with peers is still required.

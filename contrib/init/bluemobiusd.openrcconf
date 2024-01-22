@@ -1,0 +1,33 @@
+# /etc/conf.d/bluemobiusd: config file for /etc/init.d/bluemobiusd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/bluemobius/bluemobius.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/bluemobiusd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/bluemobiusd.pid"
+
+# Where to write bluemobiusd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/bluemobiusd"
+
+# User and group to own bluemobiusd process
+#BITCOIND_USER="bluemobius"
+#BITCOIND_GROUP="bluemobius"
+
+# Path to bluemobiusd executable
+#BITCOIND_BIN="/usr/bin/bluemobiusd"
+
+# Nice value to run bluemobiusd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+#BITCOIND_OPTS=""
+
+# The timeout in seconds OpenRC will wait for bluemobiusd to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+BITCOIND_SIGTERM_TIMEOUT=60

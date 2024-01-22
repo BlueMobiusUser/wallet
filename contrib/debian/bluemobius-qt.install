@@ -1,0 +1,6 @@
+usr/local/bin/bluemobius-qt usr/bin
+share/pixmaps/bluemobius32.xpm usr/share/pixmaps
+share/pixmaps/bluemobius16.xpm usr/share/pixmaps
+share/pixmaps/bluemobius128.png usr/share/pixmaps
+debian/bluemobius-qt.desktop usr/share/applications
+debian/bluemobius-qt.protocol usr/share/kde4/services/
